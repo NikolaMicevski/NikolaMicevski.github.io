@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Wonderland - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo" alt=""></a>
+        <h1 class="name">Electronics Wonderland</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="login-dropdown" class="dropdown">
+                    <a href="#" class="login-link">Log in</a>
+                    <div id="login-dropdown-content">
+                        <form id="loginForm" onsubmit="validateLogin(); return false;">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required>
+        
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+        
+                            <button type="submit">Login</button>
+                        </form>
+                        <p id="loginError" class="error-message"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2 id="h2Center">Explore Our Electronics Categories</h2>
+        <br>
+        <hr>
+        <br>
+        <h3>Personal Computers</h3>
+        <div class="category">
+        
+            <div>
+            <label>Acer Aspire TC-1760-UA92</label>
+            <p>12th Gen Intel Core i5-12400 6-Core Processor <br> 12GB 3200MHz DDR4 <br> 512GB NVMe M.2 SSD <br> 8X DVD <br> 
+                Intel Wireless Wi-Fi 6 AX201 <br> Bluetooth 5.2 <br> Windows 11 Home <br> <b>Price: 560 USD</b></p>
+                <a href="https://www.pcmag.com/reviews/acer-aspire-tc-1760-ua92">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="pc.jpg" class="pc" ></a>
+
+            <div>
+                <input type="text" id="comment-product1" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product1">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product1')">Add Comment</button>
+                <button onclick="likeProduct('product1')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product1" class="comments">Comments↓</div>
+           
+            <div>
+            <label>NZXT Player: One</label>
+            <p> CPU: Intel® Core™ i5-12400F<br>
+                GPU: NVIDIA® GeForce RTX™ 3050<br>
+                Memory: 16 GB (2 x 8GB) DDR4 3200 MHz<br>
+                Motherboard: B760<br>
+                Storage: 500GB NVMe M.2 SSD<br>
+                PSU: 650W Gold<br> 
+                <b>Price: 950 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/nzxt-player-one">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="pc2.png" class="pc" ></a>
+              
+            <div>
+                <input type="text" id="comment-product2" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product2">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product2')">Add Comment</button>
+                <button onclick="likeProduct('product2')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product2" class="comments">Comments↓</div>  
+            
+            <div>
+            <label>Dell XPS Desktop (8960)</label>
+            <p> 13th Gen Intel® Core™ i7-13700<br>
+                Windows 11 Home, English, French, Spanish<br>
+                NVIDIA® GeForce RTX™ 4080, 16 GB GDDR6X<br>
+                16 GB: 2 x 8 GB, DDR5, 4800 MT/s; up to 64 GB <br>
+                512 GB, M.2, PCIe NVMe, SSD<br>
+                750W Graphite<br> 
+                <b>Price: 2650 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/dell-xps-desktop-8960">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="pc3.avif" class="pc" ></a>
+            
+            <div>
+                <input type="text" id="comment-product3" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product3">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product3')">Add Comment</button>
+                <button onclick="likeProduct('product3')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product3" class="comments">Comments↓</div>
+           
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h3>Smartphones</h3>
+        <div class="category">
+            <div>
+            <label>Apple iPhone 15 Pro Max</label>
+            <p>Operating System	iOS 17 <br>
+                CPU	Apple A17 Pro <br>
+                Dimensions	6.29 by 3.02 by 0.32 inches<br> 
+                <b>Price: 1200 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/apple-iphone-15-pro-max">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="smartphone.jpg" class="smartphone" ></a>
+            
+            <div>
+                <input type="text" id="comment-product4" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product4">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product4')">Add Comment</button>
+                <button onclick="likeProduct('product4')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product4" class="comments">Comments↓</div>
+            
+            <div>
+            <label>Samsung Galaxy S23 Ultra</label>
+            <p>Operating System	Android 13<br>
+                CPU	Qualcomm Snapdragon 8 Gen 2 for Galaxy<br>
+                Dimensions	6.43 by 3.07 by 0.35 inches<br> 
+                <b>Price: 1200 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/samsung-galaxy-s23-ultra">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="smartphone2.jpg" class="smartphone" ></a>          
+
+            <div>
+                <input type="text" id="comment-product5" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product5">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product5')">Add Comment</button>
+                <button onclick="likeProduct('product5')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product5" class="comments">Comments↓</div>
+        
+            <div>
+            <label>Google Pixel 8</label>
+            <p>Operating System	Android 14<br>
+                CPU	Google Tensor G3<br>
+                Dimensions	5.9 by 2.8 by 0.4 inches<br> 
+                <b>Price: 680 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/google-pixel-8">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="smartphone3.jpg" class="smartphone"></a>
+
+            <div>
+                <input type="text" id="comment-product6" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product6">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product6')">Add Comment</button>
+                <button onclick="likeProduct('product6')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product6" class="comments">Comments↓</div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h3>TVs</h3>
+        <div class="category">
+            <div>
+            <label>Hisense U8 TV (65U8K)</label>
+            <p>Panel Type	LED<br>
+                Screen Size	65 inches<br>
+                Resolution	3,840 by 2,160<br> 
+                <b>Price: 900 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/hisense-65-inch-u8-series-uled-tv-65u8k">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="tv.jpg" class="smartphone"></a>
+
+            <div class="action-buttons">
+                <input type="text" id="comment-product7" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product7">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product7')">Add Comment</button>
+                <button onclick="likeProduct('product7')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product7" class="comments">Comments↓</div>
+
+           
+            <div>
+            <label>Samsung S90C TV</label>
+            <p>Panel Type	OLED<br>
+                Screen Size	65 inches<br>
+                Resolution	3,840 by 2,160<br> 
+                <b>Price: 1600 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/samsung-65-inch-s90c-oled-tv">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="tv2.avif" class="smartphone"></a>
+
+            <div>
+                <input type="text" id="comment-product8" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product8">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product8')">Add Comment</button>
+                <button onclick="likeProduct('product8')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product8" class="comments">Comments↓</div>
+
+            <div>
+            <label>LG C3 Evo TV</label>
+            <p>Panel Type	OLED<br>
+                Screen Size	65 inches<br>
+                Resolution	3,840 by 2,160<br> 
+                <b>Price: 1600 USD</b></p>
+            <a href="https://www.pcmag.com/reviews/lg-c3-65-inch-evo-oled-tv-oled65c3pua">Read Reviews</a>
+            </div>
+            <div>
+            <a href="#"><img src="tv3.jpg" class="smartphone"></a>
+
+            <div>
+                <input type="text" id="comment-product9" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-product9">Likes: 0</span>
+                <br>
+                <button onclick="addComment('product9')">Add Comment</button>
+                <button onclick="likeProduct('product9')">Like</button>
+            </div>
+            </div>
+            <div id="comments-product9" class="comments">Comments↓</div>
+          
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2 id="h2Center">Place an Order</h2>
+        <div class="category">
+            <form id="orderForm"">
+                <label for="customerName">Name:</label><br>
+                <input type="text" id="customerName" name="customerName" class="box">
+        
+                <label for="customerEmail">Email:</label><br>
+                <input type="email" id="customerEmail" name="customerEmail" class="box">
+
+                <label for="shippingAddress">Shipping Address:</label><br>
+                <textarea id="shippingAddress" name="shippingAddress" rows="4" class="box"></textarea>
+
+                <label for="billingAddress">Billing Address:</label><br>
+                <textarea id="billingAddress" name="billingAddress" rows="4" class="box"></textarea>
+
+                <label for="creditCard">Credit Card Number:</label><br>
+                <input type="text" id="creditCard" name="creditCard" pattern="[0-9]{16}" placeholder="16-digit card number" class="box">
+
+                <label for="expirationDate">Expiration Date:</label><br>
+                <input type="text" id="expirationDate" name="expirationDate" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" placeholder="MM/YY" class="box">
+
+                <label for="securityCode">Security Code:</label><br>
+                <input type="text" id="securityCode" name="securityCode" pattern="[0-9]{3}" placeholder="3-digit code" class="box">
+        
+                <label for="productSelection">Select Product:</label><br>
+                <select id="productSelection" name="productSelection" class="box">
+                    <option>Acer Aspire TC-1760-UA92</option>
+                    <option>NZXT Player: One</option>
+                    <option>Dell XPS Desktop (8960)</option>
+                    <option>Apple iPhone 15 Pro Max</option>
+                    <option>Samsung Galaxy S23 Ultra</option>
+                    <option>Google Pixel 8</option>
+                    <option>Hisense U8 TV (65U8K)</option>
+                    <option>Samsung S90C TV</option>
+                    <option>LG C3 Evo TV</option>
+                </select>
+        
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" class="box"><br>
+                <button type="submit" class="box">Submit Order</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <section id="footer">
+        <div class="footer-div">
+            <p>&copy; 2023 Electronics Wonderland. All rights reserved.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

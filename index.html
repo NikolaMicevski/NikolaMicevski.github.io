@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Wonderland - Online shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo"></a>
+            <h1 class="name">Electronics Wonderland</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="login-dropdown" class="dropdown">
+                    <a href="#" class="login-link">Log in</a>
+                    <div id="login-dropdown-content">
+                        <form id="loginForm" onsubmit="validateLogin(); return false;">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required>
+        
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+        
+                            <button type="submit">Login</button>
+                        </form>
+                        <p id="loginError" class="error-message"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+   
+        <div class="heros">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="home2">
+                <p>Step into the world of innovation and technology with our Electronics Wonderland. 
+                    Explore a carefully curated selection of cutting-edge products designed to elevate 
+                    your home experience.</p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+    <section id="home">
+        <h3>Explore Cutting-Edge PCs</h3>
+        <div class="category">
+            <p>Welcome to our PC Wonderland! Dive into the world of computing excellence with our diverse 
+                range of PCs. Whether you're a tech enthusiast, a professional seeking powerful workstations, 
+                or a gamer in pursuit of the ultimate gaming rig, our collection has something for everyone. From sleek 
+                ultrabooks for on-the-go productivity to high-performance gaming desktops that push the boundaries, discover
+                PCs designed to elevate your computing experience. Unleash the power of innovation and craftsmanship with 
+                our curated selection, and embark on a journey of limitless possibilities.</p>
+        </div>
+        <h3>Revolutionize Your Mobile Lifestyle with Smartphones</h3>
+        <div class="category">
+            <p>Step into the future of connectivity with our extraordinary range of smartphones. Our collection features 
+                the latest models from top brands, delivering a perfect blend of sleek design, powerful performance, and 
+                innovative features. Whether you're a photography enthusiast capturing life's moments, a multitasker juggling 
+                work and play, or a trendsetter seeking the latest in mobile technology, our smartphones are designed to
+                complement your lifestyle. Stay connected, capture memories in stunning detail, and embrace the convenience 
+                of cutting-edge mobile technology with our curated selection.</p>
+        </div>
+        <h3>Immersive Entertainment with Smart TVs</h3>
+        <div class="category">
+            <p>Elevate your entertainment space with our range of Smart TVs. Immerse yourself in stunning visuals, vibrant 
+                colors, and crystal-clear audio as you explore the world of cinematic experiences. Whether you're a movie 
+                buff, a sports enthusiast, or a binge-watcher of your favorite shows, our Smart TVs bring the theater to 
+                your living room. Discover cutting-edge features like 4K resolution, smart connectivity, and sleek designs 
+                that seamlessly blend with your home decor. Transform your viewing experience with our curated selection of 
+                Smart TVs designed for the ultimate entertainment journey.</p>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer-div">
+            <p>&copy; 2023 Electronics Wonderland. All rights reserved.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

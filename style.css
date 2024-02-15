@@ -1,0 +1,189 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+#header {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: aqua;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    width: 100px; 
+    mix-blend-mode: multiply;   
+}
+.name{
+    margin-left: 400px;
+    font-size: 30px; 
+    font-weight: bold; 
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+#navbar a:hover{
+    color: grey;
+}
+
+#home {
+    padding: 40px;
+    text-align: center;
+}
+
+.category {
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category h3 {
+    color: #333;
+}
+
+.category p {
+    color: #555;
+}
+
+#footer {
+    background-color: aqua; 
+    padding: 20px; 
+}
+
+.footer-div {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.pc {
+    width: 100px; 
+    mix-blend-mode: multiply;
+}
+
+.smartphone{
+    width: 100px; 
+    mix-blend-mode: multiply;
+}
+
+.category label {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#impressionsForm,#orderForm {
+    background-color: #ffb6c1;
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 54%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+}
+
+form .box{
+    width: 70%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.head2 {
+    text-align: center;
+}
+
+#contactInfo{
+    margin-left: 200px; 
+}
+
+.comments{
+    margin: 20px;
+}
+
+#h2Center {
+    text-align: center;
+}
+
+hr {
+    border: 2px solid #ccc; 
+    margin: 20px 0; 
+}
+
+#login-dropdown {
+    position: relative;
+}
+
+.login-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#login-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#login-dropdown-content form {
+    width: 200px;
+    text-align: left;
+}
+
+#login-dropdown:hover #login-dropdown-content {
+    display: block;
+}
+
+#contactInfo .list a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.heros{
+    background-image: url(home-page2.png);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    top: 2%;
+    width: 30000px 600px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
+    text-shadow: -1px 1px 0 black;
+}
+
+.home2 {
+    font-weight: 550;
+    font-size: 50px;
+}

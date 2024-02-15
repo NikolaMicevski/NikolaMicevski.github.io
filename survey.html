@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Wonderland - Online shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo"></a>
+            <h1 class="name">Electronics Wonderland</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="login-dropdown" class="dropdown">
+                    <a href="#" class="login-link">Log in</a>
+                    <div id="login-dropdown-content">
+                        <form id="loginForm" onsubmit="validateLogin(); return false;">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required>
+        
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+        
+                            <button type="submit">Login</button>
+                        </form>
+                        <p id="loginError" class="error-message"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <h2 class="head2">Website Impressions Survey</h2>
+
+    <form id="impressionsForm">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" class="box">
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" class="box">
+        <br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" class="box">
+        <br>
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" class="box">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+        <label for="overallExperience">Overall Experience (1-10):</label><br>
+        <input type="number" id="overallExperience" name="overallExperience" min="1" max="10" class="box">
+        <br>
+        <label for="usefulFeatures">Most Useful Features:</label><br>
+        <textarea id="usefulFeatures" name="usefulFeatures" class="box"></textarea>
+        <br>
+        <label for="easyNavigation">Ease of Navigation:</label><br>
+        <div class="radio-group">
+        <input type="radio" id="easy" name="easyNavigation" value="easy">
+        <label for="easy">Easy</label>
+        <input type="radio" id="difficult" name="easyNavigation" value="difficult">
+        <label for="difficult">Difficult</label>
+        </div>
+        <br>
+        <label for="improvementSuggestions">Suggestions for Improvement:</label><br>
+        <textarea id="improvementSuggestions" name="improvementSuggestions" class="box"></textarea>
+        <br>
+        <label for="likelihoodToReturn">Likelihood to Return (1-10):</label><br>
+        <input type="number" id="likelihoodToReturn" name="likelihoodToReturn" min="1" max="10" class="box">
+        <br>
+        <label for="encouragementToReturn">Encouragement to Return:</label><br>
+        <textarea id="encouragementToReturn" name="encouragementToReturn" class="box"></textarea>
+        <br>
+        <label for="additionalComments">Additional Comments:</label><br>
+        <textarea id="additionalComments" name="additionalComments" class="box"></textarea>
+        <br>
+        <button type="submit" class="box">Submit Survey</button>
+    </form>
+
+    <section id="footer">
+        <div class="footer-div">
+            <p>&copy; 2023 Electronics Wonderland. All rights reserved.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

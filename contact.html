@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Wonderland - Online shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo"></a>
+            <h1 class="name">Electronics Wonderland</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="login-dropdown" class="dropdown">
+                    <a href="#" class="login-link">Log in</a>
+                    <div id="login-dropdown-content">
+                        <form id="loginForm" onsubmit="validateLogin(); return false;">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required>
+        
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+        
+                            <button type="submit">Login</button>
+                        </form>
+                        <p id="loginError" class="error-message"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contactInfo">
+        <h2 id="contactinfo">Contact Information</h2>
+
+        <div>
+            <h3>Emails:</h3>
+            <h4>Sales</h4>
+            <p>sales@electronicswonderland.com</p>
+            <h4>Service</h4>
+            <p>service@electronicswonderland.com</p>
+            <h4>Technical Support</h4>
+            <p>support@electronicswonderland.com</p>
+            <h4>Customer Care</h4>
+            <p>customercare@electronicswonderland.com</p>
+        </div>
+
+        <div>
+            <h3>Phone:</h3>
+            <p>+389 70 123 456</p>
+        </div>
+
+        <div>
+            <h3>Address:</h3>
+            <p>Rugjer Boshkovik 18<br>
+                PO Box 574<br>
+                1000 Skopje<br>
+                Republic of Macedonia</p>
+        </div>
+
+        <div>
+            <h3>Working Hours:</h3>
+            <p>Monday-Friday, 09:00 - 17:00</p>
+        </div>
+
+        <div>
+            <h3>Social Media:</h3>
+            <ul class="list">
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <div class="footer-div">
+            <p>&copy; 2023 Electronics Wonderland. All rights reserved.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
